@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: front
+  template:
+    metadata:
+      labels:
+        type: front
+    spec:
+      containers:
+      - name: front-container
+        image: jairamjiki/templated_app
+        env:
+          - name: MONGOHOST
+            value: "back-expose-service"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 9000
