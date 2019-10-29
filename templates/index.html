@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title> a Todo list app </title>
+    </head>
+
+    <body leftmargin='500px' topmargin="70px">
+        <h1><font color='#98ce46'</font> list of tasks </font></h1> 
+        <div id='list' >
+            <font color='#519fcc'>
+            {% for tasks in data %}
+            <h3>
+            - {{ tasks.task }}<br>
+            </h3>
+            {% endfor %}
+            </font>
+        </div>
+        <form action="/update/add" method="post">
+            <h3><input type='text' placeholder='enter a task' name='task' /> <br>
+                <button type='submit' name='type' > add </button>&emsp;
+                <button type='submit' name='type2'  formaction='/update/remove'>remove</button>
+            </h3>
+        </form>
+    </body>
+</html>

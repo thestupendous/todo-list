@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mongo-database:
+    image: mongo
+    
+  api:
+    build: ./
+    environment:
+       - MONGOHOST=mongo-database
+    ports:
+      - "9000:9000"
+    depends_on:
+      - mongo-database
