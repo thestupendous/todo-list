@@ -4,7 +4,7 @@ fully functioning python web app which can store task list in database, you can 
 
 # How to Run
 To run the app -
-  1. install docker, docker-compose
-  2. run :
-     $ sudo docker-compose up
-  3. open your browser and open the url "0.0.0.0:9000"  or "localhost:9000"
+  1. Install docker, docker-compose
+  2. In the todo-list directory run : 
+         $ sudo docker-compose up
+  3. Open your browser and open the url "0.0.0.0:9000"  or "localhost:9000"
