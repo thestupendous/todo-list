@@ -17,6 +17,5 @@ To run the app -
   2. In the todo-list directory run : \
        &nbsp;&nbsp;  $ ./k8s-deployment/one-click-deploy.sh
   3. Open your browser and open the url "\<ip-of-frontend-node\>:31900" \
-  &nbsp; if you're using minikube, run  \
+  &nbsp; if you're using minikube, just run  \
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ minikube service front-expose-service
-
