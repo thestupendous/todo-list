@@ -18,4 +18,8 @@ To run the app -
        &nbsp;&nbsp;  $ ./k8s-deployment/one-click-deploy.sh
   3. Open your browser and open the url "\<ip-of-frontend-node\>:31900" \
   &nbsp; if you're using minikube, just run  \
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ minikube service front-expose-service
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ &nbsp;minikube service front-expose-service
+
+To remove the app -
+  1. In the todo-list directory run : \
+       &nbsp;&nbsp;  $ &nbsp;./k8s-deployment/one-click-remove.sh
