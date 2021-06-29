@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front-deployment
-  namespace: todo-list
+  namespace: todo-app
 spec:
   replicas: 1
   selector:
