@@ -1,5 +1,10 @@
 # todo-list
 fully functioning python web app which can store task list in database, you can add and delete tasks. Flask is used to handle requests, jinja2 template is used for beautiful, interactive interface.
+Topics covered in this project:
+- python3 flask, jinja template, using template html
+- mongodb, collections, find(), insertOne(),
+- pymongo in python3 to connect to mongodb
+- using environment variables in python3
 
 
 # How to Run
